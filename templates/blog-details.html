@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-grat-100 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+        <div>
+            <h1 class="text-3xl font-bold">AI Blog Generator</h1>
+        </div>
+        <div>
+            <a href="#" class="text-white hover:underline mx-4">Welcome {{ user.username }}</a>
+            <a href="/blog-list" class="text-white hover:underline mx-4">Saved Blog Posts</a>
+            <a href="#" class="text-white hover:underline">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-10 px-4 sm:px-0">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
+
+            <section>
+                <h2 class="text-xl mb-4 font-semibold">Blog Post Details</h2>
+                <div class="border border-gray-300 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold">{{blog_article_detail.youtube_title}}</h3>
+                    <p class="text-gray-700">{{blog_article_detail.generated_content}}</p>
+                    <hr class="my-4 border-gray-300">
+                    <h4 class="text-lg font-semibold">Youtube Title</h4>
+                    <p class="text-gray-700">{{blog_article_detail.youtube_title}}</p>
+                    <h4 class="text-lg font-semibold mt-4">Youtube Link</h4>
+                    <a href="{{blog_article_detail.youtube_link}}" class="text-blue-600 hover:underline">{{blog_article_detail.youtube_link}}</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="text-center p-4 text-blacl mt-6">
+        Powered by <a href="https://www.youtube.com/codewithtomi">Code With Tomi</a>
+    </footer>
+</body>
+</html>
