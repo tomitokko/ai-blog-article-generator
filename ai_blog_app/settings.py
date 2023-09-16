@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'ai_blog_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'qoveryadmin',
-        'PASSWORD': 'Q-XD7W5gyxmh3ZK6M6M5XfeHq5Jwoe04',
-        'HOST': 'z2348f305-postgresql.cjphzppblykf.us-east-1.rds.amazonaws.com',
+        'NAME': 'NAME',
+        'USER': 'USER',
+        'PASSWORD': 'PASSWORD',
+        'HOST': 'HOST',
         'PORT': '5432',
     }
 }
